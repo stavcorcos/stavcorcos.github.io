@@ -1,0 +1,243 @@
+* {font-family: 'Questrial', sans-serif !important;}
+html, body{height: 100%;position: relative;background-color: #b4b4b4 !important;}
+body{overflow: hidden;}
+h1 {
+    font-size: 50px !important;
+    text-align: center;
+    color: white !important;
+}
+
+.fadeIn {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 50px;
+    text-align: center;
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.fadeIn.load {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.fadeInAboutme {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 60px;
+    text-align: center;
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.fadeInAboutme p a {
+    color: white;
+}
+.fadeInAboutme.aboutMeText {
+    font-size: 20px;
+    text-align: justify;
+}
+.fadeInAboutme.aboutMeText a {
+    color: rgb(255, 255, 255, 0);
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.fadeInAboutme.load.aboutMeText a {
+	color: rgb(255, 255, 255);
+}
+.fadeInAboutme.load {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.fadeInProjects {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 60px;
+    text-align: center;
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.fadeInProjects.load {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.fadeInContact {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 60px;
+    text-align: center;
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.fadeInContact.load {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.arrows {
+	width: 50px;
+	height: 50px;
+    z-index: 10;
+    top: 90%;
+    position: absolute;
+}
+
+.arrows.load , .up {
+    cursor: pointer;
+}
+
+.containment {
+	margin: 0 10px !important;
+	display: inline-block;
+}
+
+.superrow {
+	overflow-y: auto;
+	max-height: 50%;
+    margin-top: -200px;
+    padding: 10px;
+    width: 99% !important;
+}
+
+::-webkit-scrollbar {-webkit-appearance: none;}
+::-webkit-scrollbar:vertical {width: 12px;}
+::-webkit-scrollbar:horizontal {height: 12px;}
+::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, .5);border-radius: 10px;border: 2px solid #ffffff;}
+::-webkit-scrollbar-track {border-radius: 10px;background-color: #ffffff;}
+
+.cube {
+    opacity: 0;
+    margin-bottom: 100px;
+    display: inline-block;
+	position: relative;
+    height: 100px; 
+    width: 150px;
+	color: #FFF;
+    text-align:center;
+    vertical-align: middle;
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+.cube.load {
+    opacity: 1;
+}
+.cube p {
+	font-size: 13px;
+	padding: 5px 10px;
+	margin: 0;
+}
+.default-state, .active-state {
+	height: 150px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: transform 0.4s ease;
+	transform-origin: center center -75px;
+	-webkit-transform-origin: center center -75px;
+	width: 100%;
+}
+.default-state {
+    margin-right: 10px;
+    background-color: #b4b4b4;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.active-state {
+    margin: 0 !important;
+	background: #aaaaaa;
+    transform: perspective(1000px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+.cube:hover .default-state {
+	transform: perspective(1000px) rotateX(90deg) rotateY(0) rotateZ(0deg);
+}
+.cube:hover .active-state {
+    z-index: 99999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+}
+
+.hhsclubs {
+    background-image: url(images/HHSClubs.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.javaCade {
+    background-image: url(images/Javacade.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.battleship {
+    background-image: url(images/Battleship.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.katcorcos {
+    background-image: url(images/Kathryn.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.wowcraft {
+    background-image: url(images/WoW.png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.contactimgs {
+    height: 100%;
+}
+
+.contacts {
+    opacity: 0;
+    height: 100px;
+    margin: 0 5px !important;
+    color: rgba(255, 255, 255, 0);
+    -webkit-transition: 1.5s ease-in;
+    -moz-transition: 1.5s ease-in;
+    -ms-transition: 1.5s ease-in;
+    -o-transition: 1.5s ease-in;
+    transition: 1.5s ease-in;
+}
+
+.contacts.load {
+    opacity: 1;
+    color: white;
+}
+
+.contacts a {
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.contacts a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 04), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}

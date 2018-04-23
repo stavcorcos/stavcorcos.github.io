@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html id = "html" lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stav's Portfolio</title>
+        <meta name="description" content="Welcome to my portfolio site! Have a look at some of my recent projects.">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link rel="stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body onload="fadeIn();">
+    <div id = "landing" style = "height: 100% !important;" class = "container-fluid">
+        <div style = "height: 100% !important;" class = "row justify-content-center align-items-center">
+            <div class = "col-12">
+                <h1 class = "fadeIn">Hi.</h1>
+                <h1 class = "fadeIn">My name is Stav Corcos.</h1>
+                <h1 class = "fadeIn">Welcome to my portfolio.</h1>
+            </div>
+            <img class = "fadeIn arrows" onclick = "javascript:scroll_to_aboutme(); fadeInAboutme();" src = "images/downArrow.png">
+        </div>
+    </div>
+    <div id = "aboutme" class = "container" style = "height: 100% !important;">
+        <div class = "row justify-content-center align-items-center" style = "height: 100% !important;">
+            <img onclick="javascript:scroll_to_landing();" class = "arrows up" style = "top: 3%;" src = "images/upArrow.png">
+            <div class = "col-12">
+                <h1 class = "fadeInAboutme">About me.</h1>
+            </div>
+            <div class = "row superrow justify-content-center">
+                <div class = "aboutMeText">
+                    <p class = "fadeInAboutme aboutMeText">I'm a freshly-graduated high school student with a burning passion for programming. I first started coding in the 10th grade for a class called Computer Tech and Careers. I made a game in Scratch in three days (game can be seen <a href = "#">here.</a>) I didn't start serious programming, however, until the 12th grade. I took Programming 1 and 2 in place of Ceramics at the last minute. I instantly fell in love with the subject and began to pursue it on my own time. I've completed almost every course on Codecademy (can be seen <a href = "#">here.</a>) and have pursued web development ever since. As the focus of my Senior Year Project, I decided to really hone these skills and build a fullstack website for my high school. In just over 4 months, HHSClubs was created. Nowadays, I constantly practice and learn new things in the world of web development, and I hope to grow more as the years come.</p>
+                </div>
+            </div>
+            <img onclick="javascript:scroll_to_projects(); fadeInProjects();" class = "fadeInAboutme arrows" src = "images/downArrow.png">
+        </div>
+    </div>
+    <div id = "projects" style = "height: 100% !important;" class = "container-fluid">
+        <div style = "height: 100% !important;" class = "row justify-content-center align-items-center">
+            <img onclick="javascript:scroll_to_aboutme();" class = "arrows up" style = "top: 3%;" src = "images/upArrow.png">
+            <div class = "col-12">
+                <h1 class = "fadeInProjects" >My Projects.</h1>
+            </div>
+            <div class = "row superrow justify-content-center">
+                <div class="containment">
+                    <div class="cube">
+                        <a style = "color: white; text-decoration: none;" href = "https://hhsclubs.herokuapp.com" target = "_blank">
+                            <div class="active-state row align-items-center">
+                                <p>A website I made for my high school. Lets you view the club's short description and has modals to show more information.</p>
+                            </div>
+                        </a>
+                        <div class="default-state hhsclubs">
+                        </div>
+                    </div>
+                </div>
+                <div class="containment">
+                    <div class="cube">
+                        <a style = "color: white; text-decoration: none;" href = "https://poonchy.github.io/VanillaGroup/" target = "_blank">
+                            <div class="active-state row align-items-center">
+                                <p>My first project- has had some major tweaks since its launch. A passion project for a group I've been playing with for over 6 years.</p>
+                            </div>
+                        </a>
+                        <div class="default-state wowcraft">
+                        </div>
+                    </div>
+                </div>
+                <div class="containment">
+                    <div class="cube">
+                        <a style = "color: white; text-decoration: none;" href = "https://github.com/Poonchy/Battleship" target = "_blank">
+                            <div class="active-state row align-items-center">
+                                <p>My Python game of Battleship from Codecademy's Python lessons. I've done the extra credit so the game is a little more playable.</p>
+                            </div>
+                        </a>
+                        <div class="default-state battleship">
+                        </div>
+                    </div>
+                </div>
+                <div class="containment">
+                    <div class="cube">
+                        <a style = "color: white; text-decoration: none;" href = "https://poonchy.github.io/JavaCade" target = "_blank">
+                            <div class="active-state row align-items-center">
+                                <p>An arcade of all different sorts of classic games made entirely in Javascript. The JavaScript arcade, or JavaCade!</p>
+                            </div>
+                        </a>
+                        <div class="default-state javaCade">
+                        </div>
+                    </div>
+                </div>
+                <div class="containment">
+                    <div class="cube">
+                        <a style = "color: white; text-decoration: none;" href = "https://poonchy.github.io/KathrynCorcos/" target = "_blank">
+                            <div class="active-state row align-items-center">
+                                <p>A website for my wife, Kathryn. She wanted a place to share her teaching credentials and experience, so I made a static site she can direct people to. </p>
+                            </div>
+                        </a>
+                        <div class="default-state katcorcos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class = "fadeInProjects arrows" onclick = "javascript:scroll_to_contact(); fadeInContact();" src = "images/downArrow.png">
+        </div>
+    </div>
+    <div id = "contact" style = "height: 100% !important;" class = "container-fluid">
+        <div style = "height: 100% !important;" class = "row justify-content-center align-items-center">
+            <img onclick="javascript:scroll_to_projects();" class = "arrows up" style = "top: 3%;" src = "images/upArrow.png">
+            <div class = "col-12">
+                <h1 class = "fadeInContact">Contact me.</h1>
+            </div>
+            <div class = "row superrow justify-content-center">
+                <div class = "contacts row justify-content-center align-items-center"><a target = "_blank" href = "https://github.com/Poonchy"><img class = "contactimgs" src="images/github.png"></a></div>
+                <div class = "contacts row justify-content-center align-items-center"><a target = "_blank" href = "https://www.upwork.com/freelancers/~01d2b3b35def4b4d27?viewMode=1"><img class = "contactimgs" src="images/upwork.png"></a></div>
+                <div class = "contacts row justify-content-center align-items-center"><a target = "_blank" href = "mailto:poonchys@gmail.com"><img class = "contactimgs" src="images/envelope.png"></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="zenscroll.js"></script>
+</body>
+</html>
