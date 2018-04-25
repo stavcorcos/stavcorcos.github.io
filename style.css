@@ -73,6 +73,13 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+@media (max-width: 350px) {
+    .scaleimg {
+        height: auto;
+        width: 100%;
+    }
+}
+
 .fadeInContact {
     opacity: 0;
     color: rgba(255, 255, 255, 0);
@@ -225,6 +232,8 @@ h1 {
     opacity: 1;
     color: white;
 }
+
+
 
 .contacts a {
     height: 100%;
