@@ -14,7 +14,7 @@ function fadeIn() {
     }
     setTimeout(function arrowtimer() {
         count += 1;
-    }, 5500)
+    }, 7000)
 }
 
 function fadeInAboutme() {
