@@ -43,7 +43,7 @@ export default function Hero() {
 
         <div className="flex gap-4 flex-wrap mb-12">
           <a
-            href="#work"
+            href="#experience"
             className="inline-flex items-center gap-1.5 bg-amber text-bg font-mono text-[0.82rem] font-medium px-[22px] py-[10px] rounded-[6px] no-underline tracking-[0.04em] transition-all duration-200 hover:opacity-85 hover:-translate-y-px"
           >
             View my work
