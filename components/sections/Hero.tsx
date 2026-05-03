@@ -37,7 +37,7 @@ export default function Hero() {
         </p>
 
         <p className="text-[1rem] text-text max-w-[52ch] leading-[1.8] mb-10">
-          I build fast, accessible web applications — from pixel-perfect React
+          I build fast & accessible web applications. From pixel-perfect React
           interfaces to optimised Node.js backends and cloud-ready CI/CD pipelines.
         </p>
 

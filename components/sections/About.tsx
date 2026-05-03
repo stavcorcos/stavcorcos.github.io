@@ -20,7 +20,7 @@ export default function About() {
               rankings by 25% with Next.js server-side rendering.
             </p>
             <p className="text-text leading-[1.85]">
-              I care about the details that matter — responsive, accessible interfaces
+              I care about the details that matter. Making responsive, accessible interfaces
               (WCAG 2.1 AA), scalable GraphQL APIs, and CI/CD pipelines that let teams
               ship with confidence. Most recently at Nexthink, most excitedly: always
               building something new.

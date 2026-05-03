@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="text-center max-w-[540px] mx-auto">
 
           <h2 className="heading-rule font-serif text-[clamp(1.6rem,4vw,2.2rem)] font-semibold text-text mb-12 flex items-center gap-3">
-            <span className="font-mono text-[0.8rem] text-amber font-normal tracking-[0.06em]">04.</span>
+            <span className="font-mono text-[0.8rem] text-amber font-normal tracking-[0.06em]">03.</span>
             Contact
           </h2>
 
