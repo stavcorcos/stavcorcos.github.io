@@ -1,5 +1,5 @@
-import { PROJECTS } from "../..//lib/data";
-import ProjectCard from "../../components/ui/ProjectCard";
+import { PROJECTS } from "../../app/lib/data";
+import ProjectCard from "../ui/ProjectCard";
 
 export default function Work() {
   const featured = PROJECTS.filter((p) => p.featured);

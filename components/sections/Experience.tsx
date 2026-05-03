@@ -1,4 +1,4 @@
-import { EXPERIENCE } from "../..//lib/data";
+import { EXPERIENCE } from "../../app/lib/data";
 
 export default function Experience() {
   return (

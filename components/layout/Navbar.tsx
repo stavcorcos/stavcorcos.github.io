@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "../../lib/data";
-import { useScrollSpy } from "../../hooks/useScrollSpy";
-import { cn } from "../../lib/utils";
+import { NAV_LINKS } from "../../app/lib/data";
+import { useScrollSpy } from "../../app/hooks/useScrollSpy";
+import { cn } from "../../app/lib/utils";
 
 
 export default function Navbar() {

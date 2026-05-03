@@ -1,5 +1,5 @@
-import { Project } from "../../types";
-import { cn } from "../../lib/utils";
+import { Project } from "../../app/types";
+import { cn } from "../../app/lib/utils";
 
 interface Props {
   project: Project;

@@ -1,4 +1,4 @@
-import { SKILLS } from "../../lib/data";
+import { SKILLS } from "../../app/lib/data";
 
 export default function About() {
   return (
