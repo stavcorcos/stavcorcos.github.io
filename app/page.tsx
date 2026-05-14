@@ -9,8 +9,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      {/* Will get back to once I make some more projects! */}
-      {/* <Work /> */}
+      <Work /> 
       <Experience />
       <Contact />
     </>
