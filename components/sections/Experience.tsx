@@ -6,7 +6,7 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="heading-rule font-serif text-[clamp(1.6rem,4vw,2.2rem)] font-semibold text-text mb-12 flex items-center gap-3">
-          <span className="font-mono text-[0.8rem] text-amber font-normal tracking-[0.06em]">02.</span>
+          <span className="font-mono text-[0.8rem] text-amber font-normal tracking-[0.06em]">03.</span>
           Experience
         </h2>
 
